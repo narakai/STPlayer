@@ -1,5 +1,7 @@
 package com.st.st.base.inter;
 
+import android.content.Context;
+
 import androidx.annotation.IntDef;
 
 import java.lang.annotation.Retention;
@@ -14,5 +16,5 @@ public interface IMediaFactory {
 
     }
 
-    IMediaPlayer getMediaPlayer(@PlayerMode int playerMode);
+    IMediaPlayer getMediaPlayer(@PlayerMode int playerMode, Context context);
 }
